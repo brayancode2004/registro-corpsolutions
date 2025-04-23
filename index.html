@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro de Visitantes - CorpSolutions</title>
+</head>
+<body>
+  <main>
+    <section class="formulario">
+      <h1>Registro de Visitantes - CorpSolutions</h1>
+      <form id="form-visita">
+        <label for="cedula">Cédula:</label>
+        <input type="text" id="cedula" name="cedula" required placeholder="999-999999-9999X"/>
+
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" name="nombres" required/>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required/>
+
+        <label for="departamento">Departamento que visita:</label>
+        <select id="departamento" name="departamento" required>
+          <option value="">Seleccione</option>
+          <option value="Ventas">Ventas</option>
+          <option value="Crédito">Crédito</option>
+          <option value="Recursos Humanos">Recursos Humanos</option>
+        </select>
+
+        <label for="motivo">Motivo de la visita:</label>
+        <input type="text" id="motivo" name="motivo" required/>
+
+        <button type="submit">Registrar</button>
+      </form>
+    </section>
+
+    <section class="tabla">
+      <h2>Visitas Registradas</h2>
+      <table id="tabla-visitas">
+        <thead>
+          <tr>
+            <th>Cédula</th>
+            <th>Nombre Completo</th>
+            <th>Departamento</th>
+            <th>Motivo</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
